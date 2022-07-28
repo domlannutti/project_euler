@@ -4,7 +4,7 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 ## Solution
-def even_fib(lim):
+def even_fib(lim: int) -> int:
     phi = (1+5**0.5)/2 # golden ratio
     F = 0
     n = 0
