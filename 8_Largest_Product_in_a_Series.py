@@ -25,11 +25,11 @@
 # Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
 ## Solution
-def series_prod(problem: list[str]) -> int:
+def series_prod(digi_str: list[str]) -> int:
     maximum = 0
-    for i in range(len(problem)-13):
+    for i in range(len(digi_str)-13):
         prod = 1
-        for j in problem[i:i+13]:
+        for j in digi_str[i:i+13]:
             prod *= int(j)
         if prod > maximum:
             maximum = prod
