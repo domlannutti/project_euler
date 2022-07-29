@@ -6,7 +6,7 @@
 # Find the product abc.
 
 ## Solution
-def main(target):
+def triplet(target: int) -> int:
     for m in range(3, target, 2):
         for n in range(1, m, 2):
             a = m * n
@@ -18,4 +18,4 @@ def main(target):
 
 
 if __name__ == "__main__":
-    print(main(1000))
+    print(triplet(1000))
